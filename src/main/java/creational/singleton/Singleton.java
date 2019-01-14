@@ -1,12 +1,14 @@
 package creational.singleton;
 
 public class Singleton {
-  private Singleton instance;
+  private static Singleton instance;
 
-  public Singleton createInstance() {
-    if (instance != null)
+  public static Singleton createInstance() {
+
+    if (instance != null) {
       return instance;
-    return new Singleton();
+    }
+    return instance = new Singleton();
   }
 
   private Singleton() {

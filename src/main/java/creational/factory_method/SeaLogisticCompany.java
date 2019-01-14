@@ -1,8 +1,8 @@
 package creational.factory_method;
 
-public class SeaLogisticCompany extends Logistic{
+public class SeaLogisticCompany extends Logistic {
 
-    public Transport createTransport(){
-     return new SeaTransport();
-    }
+  public Transport createTransport() {
+    return new SeaTransport();
+  }
 }
